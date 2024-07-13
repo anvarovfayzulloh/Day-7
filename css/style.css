@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 238, 238);
+}
+#playerForm {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 150px 0px 60px 0px;
+}
+.title {
+    width: 100%;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.formInput {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #DADCE5;
+    outline: none;
+    background-color: #E8F0FE;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 250ms;
+    box-shadow: 0;
+    cursor: pointer;
+}
+.formInput:focus {
+    box-shadow: #BC8E5B 0px 3px 3px;
+    transform: scale(1.01);
+}
+.submitBtn {
+    background-color: #BC8E5B;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: 300ms;
+}
+.submitBtn:hover {
+    background-color: #5b452c;
+}
+.submitBtn:active {
+    transform: scale(0.9);
+}
+#playerList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 30px;
+}
+.playerCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 16px;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+}
+.playerCard img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.playerInfo {
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.clubFilter {
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #DADCE5;
+    outline: none;
+    background-color: #E8F0FE;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 250ms;
+    box-shadow: 0;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    right: 0px;
+}
+.container{
+    margin: 0 auto;
+    width: 430px;
+    position: relative;
+    margin-bottom: 50px;
+    height: 50px;
+}
